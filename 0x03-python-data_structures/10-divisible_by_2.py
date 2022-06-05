@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from distutils.ccompiler import new_compiler
-
-
 def divisible_by_2(my_list=[]):
     if not my_list:
         return my_list
