@@ -1,1 +1,43 @@
-0x03-python-data_structures
+# 0x03-python-data_structures
+##  Tasks
+0.  Write a function that prints all integers of a list.
+    - Prototype: def print_list_integer(my_list=[]):
+    - Format: one integer per line. See example
+    - You are not allowed to import any module
+    - You can assume that the list only contains integers
+    - You are not allowed to cast integers into strings
+    - You have to use str.format() to print integers
+1.  Write a function that retrieves an element from a list like in C.
+    -  Prototype: def element_at(my_list, idx):
+    -  If idx is negative, the function should return None
+    -  If idx is out of range (> of number of element in my_list), the function should return None
+    -  You are not allowed to import any module
+    -  You are not allowed to use try/except
+2.  Write a function that replaces an element of a list at a specific position (like in C).
+    - Prototype: def replace_in_list(my_list, idx, element):
+    - If idx is negative, the function should not modify anything, and returns the original list
+    - If idx is out of range (> of number of element in my_list), the function should not modify anything, and returns the original list
+    - You are not allowed to import any module
+    - You are not allowed to use try/except
+3.  Write a function that prints all integers of a list, in reverse order.
+    - Prototype: def print_reversed_list_integer(my_list=[]):
+4.  Write a function that replaces an element in a list at a specific position without modifying the original list (like in C).
+    - Prototype: def new_in_list(my_list, idx, element):
+5.  Write a function that removes all characters c and C from a string.
+    - Prototype: def no_c(my_string):
+6.  Write a function that prints a matrix of integers.
+    - Prototype: def print_matrix_integer(matrix=[[]]):
+7.  Write a function that adds 2 tuples.
+    - Prototype: def add_tuple(tuple_a=(), tuple_b=()):
+8.  Write a function that returns a tuple with the length of a string and its first character.
+    - Prototype: def multiple_returns(sentence):
+9.  Prototype: def multiple_returns(sentence):
+    - Prototype: def max_integer(my_list=[]):
+10. Write a function that finds all multiples of 2 in a list.
+    - Prototype: def divisible_by_2(my_list=[]):
+11. Write a function that deletes the item at a specific position in a list.
+    - Prototype: def delete_at(my_list=[], idx=0):
+    - If idx is negative or out of range, nothing change (returns the same list)
+12.  Complete the source code in order to switch value of a and b
+13.  Write a function in C that checks if a singly linked list is a palindrome.
+14.  Write a function in C that checks if a singly linked list is a palindrome. 
