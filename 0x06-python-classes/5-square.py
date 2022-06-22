@@ -2,9 +2,6 @@
 """ module that creates a class of Square """
 
 
-from ctypes import sizeof
-
-
 class Square:
     """ Square class with an attribute of size """
 
