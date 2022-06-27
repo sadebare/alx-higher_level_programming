@@ -2,9 +2,6 @@
 """ Module contains a Rectangle class """
 
 
-from turtle import heading
-
-
 class Rectangle:
     """ This class contains width and height as methods in the class """
     def __init__(self, width=0, height=0):
