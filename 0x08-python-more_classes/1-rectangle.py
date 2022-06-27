@@ -1,49 +1,39 @@
 #!/usr/bin/python3
-""" Module contains a Rectangle class """
+"""Insert module comment here"""
 
 
 class Rectangle:
-    """ This class contains width and height as methods in the class """
+    """ defines an empty class rectangle """
+
     def __init__(self, width=0, height=0):
-        """Initialization of the Current Rectangle class
-        Args:
-            width (int) - width of the rectangle
-            height (int) - height of the triangle
-        """
+        """ initializes height and width """
+        self.height = height
         self.width = width
-        self.heigh = height
-
-    @property
-    def width(self):
-        """ To retrieve the width """
-        return self.__width
-
-    @width.setter
-    def width(self, value):
-        """Method that set the width to value
-        Args:
-            value - width to be set to.
-        """
-        if type(value) != int:
-            raise TypeError("width must be an integer")
-        if value < 0:
-            raise ValueError("width must be >= 0")
-        self.__width = value
 
     @property
     def height(self):
-        """ To retrieve height value """
+        """ retrieve height """
         return self.__height
+
+    @property
+    def width(self):
+        """ retrieve width """
+        return self.__width
 
     @height.setter
     def height(self, value):
-        """ Method to set the height of the rectangle to value
-        Args:
-            value - height to set the height to
-        """
-        if type(value) != int:
+        """ set height with new value """
+        if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-        
+
+    @width.setter
+    def width(self, value):
+        """ set width with new value """
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
