@@ -40,12 +40,10 @@ class Rectangle:
 
     def area(self):
         """ Method that calculate the area of rectangle """
-        area = self.__width * self.__height
-        return area
+        return self.__width * self.__height
 
     def perimeter(self):
         """ Method that calculate the perimter of a rectangle """
         if self.__width == 0 or self.__height == 0:
-            return perim == 0
-        perim = 2 * (self.__width + self.__height)
-        return perim
+            return 0
+        return 2 * (self.__width + self.__height)
