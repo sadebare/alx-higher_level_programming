@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ modeule that divides all elements in matrix """
+
+
 def matrix_divided(matrix, div):
     """ Function that divides all elements of a matrix and return a new matrix
     Args:
@@ -13,7 +15,7 @@ def matrix_divided(matrix, div):
         ZeroDivisionError: division by zero not possible
 
     Return:
-        A new matrix which entails the division of matrix and div rounded to 2 decial place
+        A new matrix which entails the division of matrix
     """
 
     result = 0
