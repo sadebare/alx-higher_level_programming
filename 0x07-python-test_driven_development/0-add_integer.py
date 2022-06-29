@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ module that returns the addition of two integers """
+
+
 def add_integer(a, b=98):
     """Function that adds 2 integers
 
@@ -10,7 +12,7 @@ def add_integer(a, b=98):
     Returns:
         a + b
 
-    Raise: 
+    Raise:
         TypeError: if not an integer or a float raise TypeError
 
     """
@@ -20,4 +22,3 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
     else:
         return int(a) + int(b)
-
