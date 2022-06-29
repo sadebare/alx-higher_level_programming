@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ Module that print square """
-from typing import Type
 
 
 def print_square(size):
