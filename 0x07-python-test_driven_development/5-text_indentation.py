@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Module that print a text with indentation """
 
+
 def text_indentation(text):
     """Function that prints a text with two lines after '.','?',':'
     Arg:
