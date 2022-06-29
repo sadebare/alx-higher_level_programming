@@ -1,25 +1,18 @@
 #!/usr/bin/python3
-""" say_my_name """
+"""Module that prints names"""
 
 
 def say_my_name(first_name, last_name=""):
-
-    """ prints My name is <first name> <last name>
+    """Print names
     Args:
-        first_name (str): The first name to be printed
-        last_name (str): The second name to be printed
-    Returns:
-        My name is <first name> <last name>
+        first_name (str): First to print.
+        last_name (str): Last to print..
+    Raises:
+        TypeError: If either; first_name or last_name are not strings.
     """
-    if first_name is None:
-        raise TypeError("first_name must be a string")
-    if last_name is None:
-        raise TypeError("first_name must be a string")
 
     if type(first_name) != str:
         raise TypeError("first_name must be a string")
-
-    if type(last_name) != str:
+    elif type(last_name) != str:
         raise TypeError("last_name must be a string")
-
-    print("My name is", first_name, last_name)
+    print("My name is {} {}".format(first_name, last_name))
