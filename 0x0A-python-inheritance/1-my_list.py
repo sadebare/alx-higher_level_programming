@@ -1,12 +1,17 @@
 #!/usr/bin/python3
-""" module that entails a class of MyList """
+"""
+===========================
+Module with class MyList
+===========================
+"""
 
 
 class MyList(list):
-    """ A class that inherit from list class and method print_sorted"""
+    """Class with method print_sorted"""
     pass
 
     def print_sorted(self):
-        """ method that print sorted list in ascending order """
+        """Methot that sorted a list"""
 
         print(sorted(list(self)))
+
