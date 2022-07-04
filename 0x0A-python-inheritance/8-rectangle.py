@@ -26,12 +26,11 @@ class BaseGeometry:
 class Rectangle(BaseGeometry):
     """
     Rectangle that inherit from BaseGeometry
-    from 7-BaseGeometry.py file
     """
 
     def __init__(self, width, height):
         """ initialization of privates """
-        self.__width = width
-        self.__height = height
         self.integer_validator('width', width)
+        self.__width = width
         self.integer_validator('height', height)
+        self.__height = height
