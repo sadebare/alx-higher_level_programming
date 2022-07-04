@@ -24,12 +24,10 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """
-    Rectangle that inherit from BaseGeometry
-    """
+    """class Rectangle inherits from BaseGeometry"""
 
     def __init__(self, width, height):
-        """ initialization of privates """
+        """initialization of privates"""
         self.integer_validator('width', width)
         self.__width = width
         self.integer_validator('height', height)
