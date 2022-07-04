@@ -38,6 +38,9 @@ class Rectangle(BaseGeometry):
         return self.__height * self.__width
 
     def __str__(self):
-        """ method that returns the implementation of the class in string format """
+        """
+        method that returns the implementation of
+        the class in string format
+        """
 
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
