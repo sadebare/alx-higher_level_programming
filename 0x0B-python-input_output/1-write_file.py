@@ -2,9 +2,6 @@
 """ module that contains write_file function """
 
 
-from asyncore import write
-
-
 def write_file(filename="", text=""):
     """
     function that writes a string to a text file (UTF8)
