@@ -31,7 +31,6 @@ class Student:
         else:
             return self.__dict__
 
-
     def reload_from_json(self, json):
         '''Loads attributes from json.'''
         for key, value in json.items():
