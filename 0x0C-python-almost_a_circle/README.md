@@ -188,3 +188,6 @@ Because we want to protect attributes of our class. With a setter, you are able 
     -   Format of the CSV:
         -   Rectangle: <id>,<width>,<height>,<x>,<y>
         -   Square: <id>,<size>,<x>,<y>
+    
+##  Author
+-   Shittu Sulaimon - [Sadebare](https://github.com/sadebare?tab=repositories)
