@@ -79,7 +79,7 @@ class Base:
             for val in new_l:
                 rtn_empty.append(cls.create(**val))
             return (rtn_empty)
-    
+
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """Saves to csv file
