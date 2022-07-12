@@ -36,7 +36,7 @@ class Square(Rectangle):
                     self.x = args[id]
                 if id == 3:
                     self.y = args[id]
-        
+
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
