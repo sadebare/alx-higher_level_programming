@@ -67,16 +67,24 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """ Returns a list of instances """
-        new_l = []
-        rtn_empty = []
-        file = "{}.json".format(cls.__name__)
-        if path.isfile(file):
-            with open(file, 'r') as f:
-                new_l = cls.from_json_string(f.read())
-            for val in new_l:
-                rtn_empty.append(cls.create(**val))
-            return (rtn_empty)
+        """
+            returns a list of instances
+        """
+        fname = cls.__name__ + ".json"
+
+        try:
+            with open(fname, encoding='utf8') as jfile:
+                content = cls.from_json_string(jfile.read())
+        except:
+            return []
+
+        instances = []
+
+        for instance in content:
+            temp = cls.create(**instance)
+            instances.append(temp)
+
+        return
 
     @classmethod
     def save_to_file(cls, list_objs):
