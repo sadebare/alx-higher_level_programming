@@ -79,15 +79,21 @@ class Base:
             return (rtn_empty)
 
     @classmethod
-    def save_to_file_csv(cls, list_objs):
-        """Saves to csv file
+    def save_to_file(cls, list_objs):
         """
+            writes the JSON strin representation of list_objs to a file
+        """
+        fname = cls.__name__ + ".json"
+        content = []
 
-        res = [item.to_dictionary() for item in list_objs]
-        with open(cls.__name__ + ".csv", mode="w") as save_file:
-            write_to = csv.DictWriter(save_file, res[0].keys())
-            write_to.writeheader()
-            write_to.writerows(res)
+        if list_objs is not None:
+            for obj in list_objs:
+                obj = obj.to_dictionary()
+                json_dict = json.loads(cls.to_json_string(obj))
+                content.append(json_dict)
+
+        with open(fname, "w") as jfile:
+            json.dump(content, jfile)
 
     @classmethod
     def load_from_file_csv(cls):
