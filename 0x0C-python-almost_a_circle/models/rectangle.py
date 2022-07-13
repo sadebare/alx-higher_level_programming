@@ -96,22 +96,19 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """ Method that assigns an argument to each attribute """
-        if args:
-            for arguments in range(len(args)):
-                if arguments == 0:
-                    self.id = args[arguments]
-                if arguments == 1:
-                    self.__width = args[arguments]
-                if arguments == 2:
-                    self.__height = args[arguments]
-                if arguments == 3:
-                    self.__x = args[arguments]
-                if arguments == 4:
-                    self.__y == args[arguments]
+        if len(args) == 0:
+            for key, val in kwargs.items():
+                self.__setattr__(key, val)
+            return
 
-        else:
-            for key, value in kwargs.items():
-                setattr(self, key, value)
+        try:
+            self.id = args[0]
+            self.width = args[1]
+            self.height = args[2]
+            self.x = args[3]
+            self.y = args[4]
+        except IndexError:
+            pass
 
     def to_dictionary(self):
         """
