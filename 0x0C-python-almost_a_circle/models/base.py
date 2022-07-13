@@ -23,7 +23,7 @@ class Base:
         This method returns the JSON string representation of list_dictionaries
         """
         new = []
-        if list_dictionaries is None or list_dictionaries == 0:
+        if list_dictionaries is None or len(list_dictionaries) == 0:
             return new
         else:
             return json.dumps(list_dictionaries)
@@ -106,4 +106,3 @@ class Base:
                 # formatting with create()
                 res.append(cls.create(**res_dict))
         return res
-        
