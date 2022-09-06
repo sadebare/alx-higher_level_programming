@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "0x03-python-data_structures:10-divisible_by_2.divisible_by_2 (python3.6)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "${workspaceFolder}/",
+                "lambdaHandler": "10-divisible_by_2.divisible_by_2"
+            },
+            "lambda": {
+                "runtime": "python3.6",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        }
+    ]
+}

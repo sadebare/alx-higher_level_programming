@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "0x04-python-more_data_structures:1-search_replace.search_replace (python3.6)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "${workspaceFolder}/",
+                "lambdaHandler": "1-search_replace.search_replace"
+            },
+            "lambda": {
+                "runtime": "python3.6",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        }
+    ]
+}
