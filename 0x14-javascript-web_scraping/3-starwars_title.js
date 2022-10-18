@@ -4,12 +4,12 @@
   where the episode number matches a given integer
   usage: ./3-starwars_title.js id
  */
-  const myArgs = process.argv.slice(2);
   const request = require('request');
-  const url = 'https://swapi-api.hbtn.io/api/films/' + myArgs[0];
-  request(url, function (error, response, body) {
-    if (!error) {
-      const json_ = JSON.parse(body);
-      console.log(json_.title);
+  const endPoint = 'https://swapi-api.hbtn.io/api/films/' + process.argv[2];
+  request({ url: endPoint, methods: 'GET' }, function (err, response, body) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(body && JSON.parse(body).title);
     }
   });
